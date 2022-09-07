@@ -1,7 +1,7 @@
 Previous work : https://github.com/SngJn-Ch/SR_gan 
 
 # Piece_sr_gan
-since current **hardware** only can handle 32 by 32 images, divide the large image into 32*32 image pieces and make each pieces into 64*64. By doing this, the final image will have 4 time higher resolution than the input images while it is not affected by the image size restriction.
+since current **hardware** only can handle 32 by 32 images, divide the large image into 32 by 32 image pieces and make each pieces into 64*64. By doing this, the final image will have 4 time higher resolution than the input images while it is not affected by the image size restriction.
 
 
 # Key difference
