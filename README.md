@@ -6,18 +6,23 @@ since current **hardware** only can handle 32 by 32 images, divide the large ima
 
 # Key difference
 - By resizing image of 256 by 256, the code can produce 32 by 32, 64 by 64, 96 by 96 ... and upto 256 by 256.
-- For the images that is larger than 32 by 32, divide that image into 32 by 32 pieces
-  - For example, image with resolution of 128 by 128 become 16 pieces of 32 by 32 images
+- For the images that are larger than 32 by 32, the code will divide that images into 32 by 32 pieces each
+  - For example, a image with resolution of 128 by 128 become 16 pieces of 32 by 32 images
 
 # Advantages
   1. Data Augmentation
     - One single piece of 256 by 256 images can generate 204 piece of 32 by 32 images
   2. higher resolution within limited hardware resource
     - Currently using google Colab Pro and can't handle image of 128 by 128 using a same layer
+  3. Detail Training
+    - The generator can train more detail of the input images
 
 # Future Improvement
   1. Since the large images are assmebled images, some of the images have lattice pattern.
     - Adding average pixel lattice pattern
+      - If the pixel at the left is (0.5, 0.25, 0.8) and the pixel at the right is (0.6, 0.35, 0.9) the pixel at the lattice pattern will be changed into (0.55, 0.3, 0.85)
+      - Fluent change in pixel
+     
   2. Currently only 4 times higher resolution
     - Applying different GAN technique and achieve more 16 times higher resolution
 
