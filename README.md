@@ -29,8 +29,11 @@ since current **hardware** only can handle 32 by 32 images, divide the large ima
 # Result
 
 Left = Input image
+
 Middle = Output Image
+
 Right = Original Image
+
 
 
 ![380](https://user-images.githubusercontent.com/111392592/188997156-45efc977-5e1a-432a-a47d-001f02d63147.png)
