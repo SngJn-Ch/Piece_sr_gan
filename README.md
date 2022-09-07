@@ -5,7 +5,7 @@ since current **hardware** only can handle 32 by 32 images, divide the large ima
 
 
 # Key difference
-- By resizing image of 256 by 256, the code can produce 32 by 32, 64 by 64, ... and upto 256 by 256.
+- By resizing image of 256 by 256, the code can produce 32 by 32, 64 by 64, 96 by 96 ... and upto 256 by 256.
 - For the images that is larger than 32 by 32, divide that image into 32 by 32 pieces
   - For example, image with resolution of 128 by 128 become 16 pieces of 32 by 32 images
 
