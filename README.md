@@ -8,6 +8,7 @@ since current **hardware** only can handle 32 by 32 images, divide the large ima
 - By resizing image of 256 by 256, the code can produce 32 by 32, 64 by 64, 96 by 96 ... and upto 256 by 256.
 - For the images that are larger than 32 by 32, the code will divide that images into 32 by 32 pieces each
   - For example, a image with resolution of 128 by 128 become 16 pieces of 32 by 32 images
+  - The image should be size of 32 * n
 
 # Advantages
   1. Data Augmentation
@@ -37,7 +38,10 @@ Right = Original Image
 
 
 ![380](https://user-images.githubusercontent.com/111392592/188997156-45efc977-5e1a-432a-a47d-001f02d63147.png)
-![378](https://user-images.githubusercontent.com/111392592/188997962-10c3912e-2fbf-4c28-abcb-2fc79abde17b.png)
+![2478](https://user-images.githubusercontent.com/111392592/189972615-1177e343-d4d9-4dc4-8439-6d914dc643cb.png)
+![2488](https://user-images.githubusercontent.com/111392592/189972625-e3d0ce01-5731-4e41-928f-a566e8eda6ad.png)
+![2492](https://user-images.githubusercontent.com/111392592/189972637-c16c0760-5cee-4e62-9cba-69a09a5a8b3f.png)
+
 
 
 # Reference
